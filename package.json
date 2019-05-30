@@ -1,0 +1,31 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "Real time communication room",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdai09/ChatRoom.git"
+  },
+  "keywords": [
+    "webRTC"
+  ],
+  "author": "Eileen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bdai09/ChatRoom/issues"
+  },
+  "homepage": "https://github.com/bdai09/ChatRoom#readme",
+  "dependencies": {
+    "connect": "^3.7.0",
+    "express": "^4.17.1",
+    "serve-static": "^1.14.1",
+    "socket.io": "^2.2.0",
+    "webrtc-adapter": "^7.2.3",
+    "websocket": "^1.0.28",
+    "ws": "^7.0.0"
+  }
+}
