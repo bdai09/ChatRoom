@@ -22,12 +22,13 @@
                 <a class="navbar-brand" href="#">&nbsp;&nbsp;ChatRoom</a>
             </div>
         </nav>
-        <div>
-            <p>Enter a username: <input id="name" type="text" maxlength="12" required
+        <div class="message">
+            <p>Enter a username: <input id="name"  type="text" maxlength="12" required
                 autocomplete="username" inputmode="verbatim" placeholder="Username">
-            <input type="button" name="Login" value="Log in" onClick="connect()"></p>
+            <input class="btn btn-default" type="button" name="Login" value="Log in" onClick="connect()"
+             style="background-color: #FF5733;"></p>
         </div>
-        <div>
+        <div class="message">
             <p>Click an username in the user list to invite them for an one-on-one video chat.</p>
         </div>
 
@@ -62,21 +63,17 @@
                         Chat: <input id="text" type="text" name="text" size="80" maxlength="256"
                                      placeholder="Chat with us!" autocomplete="off" onkeyup="handleKey(event)"
                                      disabled>
-                        <input type="button" id="send" name="send" value="Send"
+                        <input type="button" id="send" name="send" value="Send" style="border-radius: 5px;width:80px"
                                onclick="handleSendButton()" disabled>
                     </div>
             </div>
         </div>
-
-        <!-- Footer -->
-        <footer>
-        <!-- Copyright -->
-        <div class="footer-copyright text-center" style="font-weight:bold; margin-top: 5px;" >© 2018 Copyright:
-          <a href="https://github.com/bdai09/ChatRoom.git"> github-bdai09</a>
+        <div class="leaveBtn">
+            <a href="bye.html">
+                <button type="button"  class="btn btn-warning" style="font-weight:bold;font-size: 20px;">Leave Chat Room</button>
+            </a>
         </div>
-        <!-- Copyright -->     
-      </footer>
-      <!-- Footer -->
+
 </body>
 
 </html>
