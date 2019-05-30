@@ -78,7 +78,7 @@ footer{
     width: 500px;
     height:540px;
     display:block;
-    vertical-align:top;
+    /*vertical-align:top;*/
     position:relative;
     overflow:auto;
   }
