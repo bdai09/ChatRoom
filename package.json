@@ -4,8 +4,8 @@
   "description": "Real time communication room",
   "main": "signalingServer.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node signalingServer.js"
+    "start": "node signalingServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
