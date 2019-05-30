@@ -1,3 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
-h1{font-family: 'Righteous', 'cursive';
+.navbar-default .navbar-brand {
+    font-family: 'Righteous', 'cursive';
+    font-size: 40px;
+    color: #FF5733;
+    margin-top: 10px;
+}
+
+.navbar-default{
+    background-color: bisque;
+    height: 80px;
+}
+
+.invite{
+    margin-top: 10%;
+    font-size: 40px;
+    color: #FF5733;
+    text-align: center
+}
+.btn-warning{
+    background-color: #FF5733;
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
 }
