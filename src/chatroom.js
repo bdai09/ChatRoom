@@ -44,7 +44,7 @@ const setUsername = () => {
 function connect() {
   let serverUrl;
 
-  serverUrl = "wss://" + myHostname + ":18080";
+  serverUrl = "wss://" + myHostname + ":5000";
   connection = new WebSocket(serverUrl, "json");
   connection.onopen = function(evt) {
     document.getElementById("text").disabled = false;
