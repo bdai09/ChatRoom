@@ -26,5 +26,34 @@ let nextID=Date.now();
 let appendToMakeUnique=1;
 
 const processRequest=(req,res)=>{
-    const lookup=
-}
+    const lookup=path.basename(decodeURI(req.url))||'chatroom.html';
+    const f=__dirname+'\\content\\'+lookup;
+    console.log(f);
+    fs.exists(f,function(exists){
+        if(exists){
+            fs.readFile(f,function(err,data){
+                if(err){
+                    res.writeHead(500);
+                    res.end('Server Error!');
+                    return;
+                }
+                const headers={
+                    'Content-type':mimeTypes[path.extname(lookup)]
+                };
+                res.writeHead(200,headers);
+                res.end(data);
+            });
+            return;
+        }
+        res.writeHead(404);
+        res.end('Page Not Found');
+    });
+};
+
+const httpsServer=https.createServer({
+    key:fs.readFileSync(cfg.ssl_key),
+    cert:fs.readFileSync(cfg.ssl_cert)
+}, processRequest).listen(cfg.port);
+
+
+const wss=
