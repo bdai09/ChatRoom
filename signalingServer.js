@@ -26,7 +26,7 @@ let nextID=Date.now();
 let appendToMakeUnique=1;
 
 const processRequest=(req,res)=>{
-    const lookup=path.basename(decodeURI(req.url))||'chatroom.html';
+    const lookup=path.basename(decodeURI(req.url))||'index.html';
     const f=__dirname+'\\content\\'+lookup;
     console.log(f);
     fs.exists(f,function(exists){
