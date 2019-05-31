@@ -1,4 +1,8 @@
-# Server
-# WebRTC
-# Try to push server to Heroku
-# home page, chat room, bye page
+# ChatRoom
+1. Real Time Communication
+2. Support text/video communication
+
+# Tool: WebRTC 
+
+# To start: npm start
+
